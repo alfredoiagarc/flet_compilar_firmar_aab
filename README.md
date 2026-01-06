@@ -19,7 +19,7 @@ El archivo `clave.jks` es **CRÍTICO** para la identidad de tu aplicación. Si p
 
 ---
 
-## Paso 1: Generar la Clave de Firma (Keystore)
+## Generar la Clave de Firma (Keystore)
 
 Este paso solo se ejecuta **una vez** para crear el archivo `clave.jks` en la raíz del proyecto.
 
