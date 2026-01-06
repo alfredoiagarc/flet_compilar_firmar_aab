@@ -8,6 +8,10 @@ Write-Host "🚀 Iniciando compilación..." -ForegroundColor Cyan
 # Detener procesos de Java (Gradle daemon) para liberar archivos bloqueados
 Stop-Process -Name "java" -Force -ErrorAction SilentlyContinue
 
+# Copiar el archivo clave.jks a la carpeta de construcción
+Copy-Item "clave.jks" "build\flutter\android\app\"
+
+# Compilar y firmar el AAB
 flet build aab --android-signing-key-store clave.jks --android-signing-key-alias "miapp"
 
 # Copiar el archivo generado a la ruta deseada
