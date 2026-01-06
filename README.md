@@ -35,3 +35,5 @@ Este paso solo se ejecuta **una vez** para crear el archivo `clave.jks` en la ra
 
 ```bash
 keytool -genkeypair -v -keystore clave.jks -storetype JKS -keyalg RSA -keysize 2048 -validity 10000 -alias miapp -storepass MiClaveSegura1 -keypass MiClaveSegura2 -dname "CN=Alfredo Garcia, OU=AG, O=Alferis, L=San Antonio de Los Altos, S=Estado, C=VE"
+
+**Copiar el archivo clave.jks en la ruta build/flutter/android/app**

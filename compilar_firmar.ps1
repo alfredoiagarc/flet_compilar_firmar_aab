@@ -10,7 +10,6 @@ Stop-Process -Name "java" -Force -ErrorAction SilentlyContinue
 
 flet build aab --android-signing-key-store clave.jks --android-signing-key-alias "miapp"
 
-#flet build aab --android-signing-key-store c:\Servidores\crypteris\src\cajafuerza.jks --android-signing-key-alias "CajaFuerza"
 # Copiar el archivo generado a la ruta deseada
 Copy-Item "build\aab\app-release.aab" "C:\Servidores\crypteris\build\aab\miapp.aab"
 # Eliminar el archivo original
